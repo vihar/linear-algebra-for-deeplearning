@@ -7,11 +7,14 @@ Deep Learning is a subdomain of machine learning, concerned with the algorithm w
 
 Linear algebra, probability and calculus are the 'languages' in which machine learning is formulated. Learning these topics will contribute a deeper understanding of the underlying algorithmic mechanics and allow development of new algorithms.
 
-When confined to smaller levels, everything is math behind deep learning. So it is important to understand basic linear algebra before getting started with deep learning and programming it. The core data structures behind Deep-Learning are Scalars, Vectors, Matrices and Tensors. Programmatically, let's solve all the basic linear algebra problems using these.
+When confined to smaller levels, everything is math behind deep learning. So it is important to understand basic linear algebra before getting started with deep learning and programming it.
 
 <p align="center">
 <img src="https://cdn.discordapp.com/attachments/391971809563508738/442659363543318528/scalar-vector-matrix-tensor.png" width="450">
 </p>
+
+The core data structures behind Deep-Learning are Scalars, Vectors, Matrices and Tensors. Programmatically, let's solve all the basic linear algebra problems using these.
+
 
 # Scalars
 
