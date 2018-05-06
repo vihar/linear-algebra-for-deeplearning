@@ -125,6 +125,11 @@ A=[a<sub>ij</sub>]<sub>m×n</sub>
 >>> x
 matrix([[1, 2],
         [2, 3]])
+
+>>> a = x.mean(0)
+>>> a
+matrix([[1.5, 2.5]])
+>>> # Finding the mean with 1 with the matrix x.
 >>> z = x.mean(1)
 >>> z
 matrix([[ 1.5],
@@ -214,6 +219,7 @@ import numpy as np
 a = [[1, 0], [0, 1]]
 b = [1, 2]
 np.matmul(a, b)
+# Output: array([1, 2])
 
 complex_mul = np.matmul([2j, 3j], [2j, 3j])
 print(complex_mul)
