@@ -54,7 +54,7 @@ True
 
 Vectors are ordered arrays of single numbers and are an example of 1st-order tensor. Vectors are fragments of objects known as vector spaces. A vector space can be considered of as the entire collection of all possible vectors of a particular length (or dimension). The three-dimensional real-valued vector space, denoted by ℝ<sup>3</sup> is often used to represent our real-world notion of three-dimensional space mathematically.
 
-<center> x = [x<sub>1</sub>  x<sub>2</sub>  x<sub>3</sub>  x<sub>4</sub> ... x<sub>n</sub>] </center>
+<p align="center"> x = [x<sub>1</sub>  x<sub>2</sub>  x<sub>3</sub>  x<sub>4</sub> ... x<sub>n</sub>] </p>
 
 To identify the necessary component of a vector explicitly, the i<sup>th</sup> scalar element of a vector is written as x<sub>i</sub>. 
 
