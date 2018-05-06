@@ -151,24 +151,36 @@ x = np.matrix([[1, 2], [4, 3]])
 
 sum = x.sum()
 print(sum)
+# Output: 10
 ```
 
 #### Matrix-Matrix Addition
 
 C = A + B (shape of A and B should be equal)
 
-```
+```python3
 # Matrix-Matrix Addition
 
 import numpy as np
 
 x = np.matrix([[1, 2], [4, 3]])
 y = np.matrix([[3, 4], [3, 10]])
+
 print(x.shape)
+# (2, 2)
 print(y.shape)
+# (2, 2)
+
 m_sum = np.add(x, y)
 print(m_sum)
 print(m_sum.shape)
+"""
+Output : 
+[[ 4  6]
+ [ 7 13]]
+
+(2, 2)
+"""
 ```
 
 #### Matrix-Scalar Addition
@@ -183,6 +195,11 @@ import numpy as np
 x = np.matrix([[1, 2], [4, 3]])
 s_sum = x + 1
 print(s_sum)
+"""
+Output:
+[[2 3]
+ [5 4]]
+"""
 ```
 
 #### Matrix Multiplication
@@ -200,6 +217,7 @@ np.matmul(a, b)
 
 complex_mul = np.matmul([2j, 3j], [2j, 3j])
 print(complex_mul)
+# Output: (-13+0j)
 ```
 
 #### Matrix Scalar Multiplication
@@ -214,6 +232,9 @@ import numpy as np
 x = np.matrix([[1, 2], [4, 3]])
 s_mul = x * 3
 print(s_mul)
+"""
+[[ 3  6]
+ [12  9]]
 ```
 
 #### Matrix Transpose
@@ -229,15 +250,23 @@ import numpy as np
 
 a = np.array([[1, 2], [3, 4]])
 print(a)
+"""
+[[1 2]
+ [3 4]]
+"""
 a.transpose()
 print(a)
+"""
+array([[1, 3],
+       [2, 4]])
+"""
 ```
 
 # Tensors
 
 The more general entity of a tensor encapsulates the scalar, vector and the matrix. It is sometimes necessary—both in the physical sciences and machine learning—to make use of tensors with order that exceeds two.
 
-We use use Python libraries like tensorflow or PyTorch inoreder to declare tensors, rather than nesting matrices.
+We use Python libraries like tensorflow or PyTorch inoreder to declare tensors, rather than nesting matrices.
 
 *To define a simple tensor in PyTorch*
 
@@ -255,11 +284,13 @@ print(a.shape)
 t = torch.Tensor(5, 3)
 print(t)
 """
- 0  0  0
- 0  0  0
- 0  0  0
- 0  0  0
- 0  0  0
+ 0.0000e+00  0.0000e+00  0.0000e+00
+ 0.0000e+00  7.0065e-45  1.1614e-41
+ 0.0000e+00  2.2369e+08  0.0000e+00
+ 0.0000e+00  0.0000e+00  0.0000e+00
+        nan         nan -1.4469e+35
+
+[torch.FloatTensor of size 5x3]
 """
 print(t.shape)
 # torch.Size([5, 3])
@@ -276,7 +307,7 @@ p = torch.Tensor(4,4)
 q = torch.Tensor(4,4)
 ones = torch.ones(4,4)
 
-print(p, y, ones)
+print(p, q, ones)
 """
 Output:
 
