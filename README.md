@@ -325,9 +325,12 @@ Output:
   0.0000  0.0000  0.0000  0.0000
   0.0000  0.0000  0.0000  0.0000
 [torch.FloatTensor of size 4x4]
- Variable containing:
- 5
-[torch.FloatTensor of size 1]
+
+ 0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00
+ 7.0065e-45  1.1614e-41  0.0000e+00  2.2369e+08
+ 0.0000e+00  0.0000e+00  1.4349e-42  1.4349e-42
+        nan         nan -6.2183e+37         nan
+[torch.FloatTensor of size 4x4]
  
  1  1  1  1
  1  1  1  1
