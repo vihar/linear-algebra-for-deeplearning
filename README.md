@@ -273,7 +273,7 @@ array([[1, 3],
 
 The more general entity of a tensor encapsulates the scalar, vector and the matrix. It is sometimes necessary—both in the physical sciences and machine learning—to make use of tensors with order that exceeds two.
 
-We use Python libraries like tensorflow or PyTorch inoreder to declare tensors, rather than nesting matrices.
+We use Python libraries like tensorflow or PyTorch in order to declare tensors, rather than nesting matrices.
 
 *To define a simple tensor in PyTorch*
 
