@@ -99,8 +99,11 @@ print(mul)
 Matrices are rectangular arrays consisting of numbers and are an example of 2nd-order tensors. If m and n are positive integers, that is m,n ∈ ℕ then the m×n matrix contains mn numbers, with m rows and n columns.
 
 Matrix can be written as:
+
 <p align="center">
-![Matrix Image](https://cdn.discordapp.com/attachments/391971809563508738/442640005182128129/Screen_Shot_2018-05-06_at_4.21.08_PM.png "Matrix Image")
+
+![Matrix Image](https://cdn.discordapp.com/attachments/391971809563508738/442640005182128129/Screen_Shot_2018-05-06_at_4.21.08_PM.png)
+
 </p>
 
 
