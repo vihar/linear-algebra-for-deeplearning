@@ -131,37 +131,99 @@ matrix([[-0.5,  0.5],
 <class 'numpy.matrixlib.defmatrix.matrix'>
 ```
 
+#### Matrix Addition
+
+Matrices can be added to scalars, vectors and other matrices. Each of these operations has a precise definition. These techniques are used frequently in machine learning and deep learning so it is worth familiarising yourself with them.
+
 ```python3
+# Matrix Addition
+
 import numpy as np
 
-# Matrix Addition
 x = np.matrix([[1, 2], [4, 3]])
 
 sum = x.sum()
 print(sum)
+```
 
-# Matrix-Matrix Addition
+#### Matrix-Matrix Addition
 
-"""
-Givven two matrices of same sixe m x n, A=[a<sub>ij</sub>] and B=[b<sub>ij</sub>] it is possible to define the matrix C=[c<sub>ij<sub>] as the matrix sum C=A+B where c<sub>ij</sub>=a<sub>ij</sub>+b<sub>ij</sub>.
-"""
-
-# Matrix Multiplication
-
-# Matrix-Matrix Addition
-
-# Matrix-Scalar Addition
-
-# Matrix Multiplication
-
-# Matrix Transpose
-
-# Matrix-Matrix Multiplication
-
-# Scalar-Matrix Multiplication
-
-
+**C = A + B (shape of A and B should be equal)**
 
 ```
-4. Tensors
+# Matrix-Matrix Addition
+
+import numpy as np
+
+x = np.matrix([[1, 2], [4, 3]])
+y = np.matrix([[3, 4], [3, 10]])
+print(x.shape)
+print(y.shape)
+m_sum = np.add(x, y)
+print(m_sum)
+print(m_sum.shape)
+```
+
+#### Matrix-Scalar Addition
+
+**Adds the given scalar to all the elements in the given matrix.**
+
+```python3
+# Matrix-Scalar Addition
+
+import numpy as np
+
+x = np.matrix([[1, 2], [4, 3]])
+s_sum = x + 1
+print(s_sum)
+```
+
+#### Matrix Multiplication
+
+**A of shape (m x n) and B of shape (n x p) multiplied gives C of shape (m x p)**
+
+```python3
+# Matrix Multiplication
+
+import numpy as np
+
+a = [[1, 0], [0, 1]]
+b = [1, 2]
+np.matmul(a, b)
+
+complex_mul = np.matmul([2j, 3j], [2j, 3j])
+print(complex_mul)
+```
+
+#### Matrix Scalar Multiplication
+
+**Multiplies the given scalar to all the elements in the given matrix.**
+
+```python3
+# Matrix Scalar Multiplication
+
+import numpy as np
+
+x = np.matrix([[1, 2], [4, 3]])
+s_mul = x * 3
+print(s_mul)
+```
+
+#### Matrix Transpose
+
+**A=[a<sub>ij</sub>]<sub>mxn</sub>**
+**A<sup>T</sup>=[a<sub>ji</sub>]<sub>n×m</sub>**
+
+```python3
+# Matrix Transpose
+
+import numpy as np
+
+a = np.array([[1, 2], [3, 4]])
+print(a)
+a.transpose()
+print(a)
+```
+
+# Tensors
 
