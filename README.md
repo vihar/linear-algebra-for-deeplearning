@@ -235,6 +235,7 @@ print(s_mul)
 """
 [[ 3  6]
  [12  9]]
+"""
 ```
 
 #### Matrix Transpose
@@ -281,6 +282,7 @@ print(type(a))
 print(a.shape)
 # torch.Size([1])
 
+# Creates a Random Torch Variable of size 5x3.
 t = torch.Tensor(5, 3)
 print(t)
 """
