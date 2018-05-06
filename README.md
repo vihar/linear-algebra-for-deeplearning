@@ -54,7 +54,7 @@ True
 
 Vectors are ordered arrays of single numbers and are an example of 1st-order tensor. Vectors are fragments of objects known as vector spaces. A vector space can be considered of as the entire collection of all possible vectors of a particular length (or dimension). The three-dimensional real-valued vector space, denoted by ℝ<sup>3</sup> is often used to represent our real-world notion of three-dimensional space mathematically.
 
-<p align="center" style="font-size: 22px;">x = [x<sub>1</sub>  x<sub>2</sub>  x<sub>3</sub>  x<sub>4</sub> ... x<sub>n</sub>]</p>
+<p align="center" style="font-size: 22px;">x = [x<sub>1</sub>  x<sub>2</sub>  x<sub>3</sub> x<sub>4</sub> ... x<sub>n</sub>]</p>
 
 To identify the necessary component of a vector explicitly, the i<sup>th</sup> scalar element of a vector is written as x<sub>i</sub>. 
 
@@ -148,7 +148,7 @@ print(sum)
 
 #### Matrix-Matrix Addition
 
-**C = A + B (shape of A and B should be equal)**
+C = A + B (shape of A and B should be equal)
 
 ```
 # Matrix-Matrix Addition
@@ -166,7 +166,7 @@ print(m_sum.shape)
 
 #### Matrix-Scalar Addition
 
-**Adds the given scalar to all the elements in the given matrix.**
+Adds the given scalar to all the elements in the given matrix.
 
 ```python3
 # Matrix-Scalar Addition
@@ -180,7 +180,7 @@ print(s_sum)
 
 #### Matrix Multiplication
 
-**A of shape (m x n) and B of shape (n x p) multiplied gives C of shape (m x p)**
+A of shape (m x n) and B of shape (n x p) multiplied gives C of shape (m x p)
 
 ```python3
 # Matrix Multiplication
@@ -197,7 +197,7 @@ print(complex_mul)
 
 #### Matrix Scalar Multiplication
 
-**Multiplies the given scalar to all the elements in the given matrix.**
+Multiplies the given scalar to all the elements in the given matrix.
 
 ```python3
 # Matrix Scalar Multiplication
@@ -211,8 +211,9 @@ print(s_mul)
 
 #### Matrix Transpose
 
-**A=[a<sub>ij</sub>]<sub>mxn</sub>**
-**A<sup>T</sup>=[a<sub>ji</sub>]<sub>n×m</sub>**
+A=[a<sub>ij</sub>]<sub>mxn</sub>
+
+A<sup>T</sup>=[a<sub>ji</sub>]<sub>n×m</sub>
 
 ```python3
 # Matrix Transpose
@@ -226,4 +227,105 @@ print(a)
 ```
 
 # Tensors
+
+The more general entity of a tensor encapsulates the scalar, vector and the matrix. It is sometimes necessary—both in the physical sciences and machine learning—to make use of tensors with order that exceeds two.
+
+We use use Python libraries like tensorflow or PyTorch inoreder to declare tensors, rather than nesting matrices.
+
+*To define a simple tensor in PyTorch*
+
+```
+import torch
+
+a = torch.Tensor([26])
+
+print(type(a))
+# <class 'torch.FloatTensor'>
+
+print(a.shape)
+# torch.Size([1])
+
+t = torch.Tensor(5, 3)
+print(t)
+"""
+ 0  0  0
+ 0  0  0
+ 0  0  0
+ 0  0  0
+ 0  0  0
+"""
+print(t.shape)
+# torch.Size([5, 3])
+```
+
+*Few Operations on Tensors in Python*
+
+```python3
+import torch
+
+# Creating Tensors
+
+p = torch.Tensor(4,4)
+q = torch.Tensor(4,4)
+ones = torch.ones(4,4)
+
+print(p, y, ones)
+"""
+Output:
+
+1.00000e-45 *
+  0.0000  0.0000  0.0000  0.0000
+  9.8091  0.0000  0.0000  0.0000
+  0.0000  0.0000  0.0000  0.0000
+  0.0000  0.0000  0.0000  0.0000
+[torch.FloatTensor of size 4x4]
+ Variable containing:
+ 5
+[torch.FloatTensor of size 1]
+ 
+ 1  1  1  1
+ 1  1  1  1
+ 1  1  1  1
+ 1  1  1  1
+[torch.FloatTensor of size 4x4]
+"""
+
+print("Addition:{}".format(p + q))
+print("Subtraction:{}".format(p - ones))
+print("Multiplication:{}".format(p * ones))
+print("Division:{}".format(q / ones))
+
+"""
+Addition:
+1.00000e-44 *
+  0.0000  0.0000  0.0000  0.0000
+  2.1019  0.0000  0.0000  0.0000
+  0.0000  0.0000  0.0000  0.0000
+  0.0000  0.0000  0.0000  0.0000
+[torch.FloatTensor of size 4x4]
+
+Subtraction:
+-1 -1 -1 -1
+-1 -1 -1 -1
+-1 -1 -1 -1
+-1 -1 -1 -1
+[torch.FloatTensor of size 4x4]
+
+Multiplication:
+1.00000e-45 *
+  0.0000  0.0000  0.0000  0.0000
+  9.8091  0.0000  0.0000  0.0000
+  0.0000  0.0000  0.0000  0.0000
+  0.0000  0.0000  0.0000  0.0000
+[torch.FloatTensor of size 4x4]
+
+Division:
+1.00000e-44 *
+  0.0000  0.0000  0.0000  0.0000
+  1.1210  0.0000  0.0000  0.0000
+  0.0000  0.0000  0.0000  0.0000
+  0.0000  0.0000  0.0000  0.0000
+[torch.FloatTensor of size 4x4]
+"""
+```
 
