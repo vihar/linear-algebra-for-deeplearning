@@ -41,7 +41,7 @@ def isscalar(num):
 ```
 
 ```python3
->>>import numpy as mp
+>>> import numpy as mp
 >>> np.isscalar(3.1)
 True
 >>> np.isscalar([3.1])
@@ -98,24 +98,33 @@ print(mul)
 
 Matrices are rectangular arrays consisting of numbers and are an example of 2nd-order tensors. If m and n are positive integers, that is m,n ∈ ℕ then the m×n matrix contains mn numbers, with m rows and n columns.
 
+Matrix can be written as:
+<p align="center">
+![Matrix Image](https://cdn.discordapp.com/attachments/391971809563508738/442640005182128129/Screen_Shot_2018-05-06_at_4.21.08_PM.png "Matrix Image")
+</p>
+
+
+*Defining Matrix and Few Operations in Python*
 
 ```python3
->>>x = np.matrix([[1,2],[2,3]])
->>>x
+>>> x = np.matrix([[1,2],[2,3]])
+>>> x
 matrix([[1, 2],
         [2, 3]])
->>>z = x.mean(1)
->>>z
+>>> z = x.mean(1)
+>>> z
 matrix([[ 1.5],
         [ 2.5]])
->>>z.shape
+>>> z.shape
 (2, 1)
->>>y = x - z
+>>> y = x - z
 matrix([[-0.5,  0.5],
         [-0.5,  0.5]])
->>>print(type(z))
+>>> print(type(z))
 <class 'numpy.matrixlib.defmatrix.matrix'>
 ```
+
+
 
 
 4. Tensors
