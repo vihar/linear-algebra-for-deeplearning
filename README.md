@@ -100,11 +100,7 @@ Matrices are rectangular arrays consisting of numbers and are an example of 2nd-
 
 Matrix can be written as:
 
-<p align="center">
-
-![Matrix Image](https://cdn.discordapp.com/attachments/391971809563508738/442640005182128129/Screen_Shot_2018-05-06_at_4.21.08_PM.png)
-
-</p>
+<img align="center" src="https://cdn.discordapp.com/attachments/391971809563508738/442640005182128129/Screen_Shot_2018-05-06_at_4.21.08_PM.png" width="250">
 
 
 *Defining Matrix and Few Operations in Python*
