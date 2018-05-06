@@ -9,9 +9,9 @@ Linear algebra, probability and calculus are the 'languages' in which machine le
 
 When confined to smaller levels, everything is math behind deep learning. So it is important to understand basic linear algebra before getting started with deep learning and programming it.
 
-1. Scalars
+# Scalars
 
-**Scalars are single numbers and are an example of a 0th-order tensor.**The notation x ∈ ℝ states that the scalar values in an element in a set of real-valued numbers, ℝ. There are different sets of numbers of interest in deep learning. ℕ represents the set of positive integers (1,2,3,…). ℤ designates the integers, which combine positive, negative and zero values. ℚ represents the set of rational numbers that may be expressed as a fraction of two integers.
+**Scalars are single numbers and are an example of a 0th-order tensor**. The notation x ∈ ℝ states that the scalar values in an element in a set of real-valued numbers, ℝ. There are different sets of numbers of interest in deep learning. ℕ represents the set of positive integers (1,2,3,…). ℤ designates the integers, which combine positive, negative and zero values. ℚ represents the set of rational numbers that may be expressed as a fraction of two integers.
 
 Few built-in scalar types are int, float, complex, bytes, Unicode. In NumPy, there are 24 new fundamental Python types to describe different types of scalars.[More Info](https://docs.scipy.org/doc/numpy-1.14.0/reference/arrays.scalars.html). When it comes to a graphical representation, it will be a simple point on the graph.
 
