@@ -98,14 +98,22 @@ print(mul)
 
 Matrices are rectangular arrays consisting of numbers and are an example of 2nd-order tensors. If m and n are positive integers, that is m,n ∈ ℕ then the m×n matrix contains mn numbers, with m rows and n columns.
 
-Matrix can be written as:
+**The full m×n matrix can be written as:**
 
-<img align="center" src="https://cdn.discordapp.com/attachments/391971809563508738/442640005182128129/Screen_Shot_2018-05-06_at_4.21.08_PM.png" width="250">
+<p align="center">
+<img src="https://cdn.discordapp.com/attachments/391971809563508738/442640005182128129/Screen_Shot_2018-05-06_at_4.21.08_PM.png" width="250">
+</p>
 
+It is often useful to abbreviate the full matrix component display into the following expression:
+
+<p align="center">
+A=[a<sub>ij</sub>]<sub>m×n</sub>
+</p>
 
 *Defining Matrix and Few Operations in Python*
 
 ```python3
+>>> import numpy as np
 >>> x = np.matrix([[1,2],[2,3]])
 >>> x
 matrix([[1, 2],
@@ -123,17 +131,37 @@ matrix([[-0.5,  0.5],
 <class 'numpy.matrixlib.defmatrix.matrix'>
 ```
 
+```python3
+import numpy as np
+
+# Matrix Addition
+x = np.matrix([[1, 2], [4, 3]])
+
+sum = x.sum()
+print(sum)
+
+# Matrix-Matrix Addition
+
+"""
+Givven two matrices of same sixe m x n, A=[a<sub>ij</sub>] and B=[b<sub>ij</sub>] it is possible to define the matrix C=[c<sub>ij<sub>] as the matrix sum C=A+B where c<sub>ij</sub>=a<sub>ij</sub>+b<sub>ij</sub>.
+"""
+
+# Matrix Multiplication
+
+# Matrix-Matrix Addition
+
+# Matrix-Scalar Addition
+
+# Matrix Multiplication
+
+# Matrix Transpose
+
+# Matrix-Matrix Multiplication
+
+# Scalar-Matrix Multiplication
 
 
 
+```
 4. Tensors
-5. Matrix Addition
-6. Matrix-Matrix Addition
-7. Matrix-Scalar Addition
-8. Broadcasting
-9. Matrix Multiplication
-10. Matrix Transpose
-11. Matrix-Matrix Multiplication
-12. Scalar-Matrix Multiplication
-13. Scalar-Matrix Multiplication
-14. Dot Product
+
